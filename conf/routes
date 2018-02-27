@@ -1,0 +1,13 @@
+GET / mainpackage.controllers.HomeController.index
+
+GET /authors/:authorID/books/:bookID mainpackage.controllers.AuthorController.getBookByAuthor(authorID: String, bookID: String)
+
+GET /authors/:authorID/books mainpackage.controllers.AuthorController.getBooksByAuthor(authorID: String)
+
+GET /authors/:authorID mainpackage.controllers.AuthorController.getAuthor(authorID: String)
+
+GET /authors mainpackage.controllers.AuthorController.getAuthors()
+
+GET /books/:bookID mainpackage.controllers.BookController.getBook(bookID: String)
+
+GET /books mainpackage.controllers.BookController.getBooks()
